@@ -35,12 +35,12 @@
           "target": "~/.bin/"
         },
         {
-          "file": "tutorial/config/counting.json",
-          "target": "~/config/"
+          "file": "config/counting.json",
+          "target": "~/tutorial/config/"
         },
         {
-          "file": "tutorial/config/dashboard.json",
-          "target": "~/config/"
+          "file": "config/dashboard.json",
+          "target": "~/tutorial/config/"
         }
       ],
       "host01": [
@@ -53,12 +53,12 @@
           "target": "~/.bin/"
         },
         {
-          "file": "tutorial/config/counting.json",
-          "target": "~/config/"
+          "file": "config/counting.json",
+          "target": "~/tutorial/config/"
         },
         {
-          "file": "tutorial/config/dashboard.json",
-          "target": "~/config/"
+          "file": "config/dashboard.json",
+          "target": "~/tutorial/config/"
         }
       ]
     }

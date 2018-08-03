@@ -4,8 +4,8 @@ host_commands=(
 "mkdir -p ~/src"
 "mkdir -p ~/tutorial/config"
 "cd ~/src && curl -L http://assets.joinscrapbook.com/unzip -O"
-"mv ~/src/unzip ~/.bin/unzip"
-"chmod +x ~/.bin/unzip"
+"chmod +x ~/src/unzip"
+"mv ~/src/unzip /usr/local/bin"
 
 "cd ~/src && curl -L https://releases.hashicorp.com/consul/1.2.2/consul_1.2.2_linux_amd64.zip -O"
 "unzip -d ~/.bin ~/src/consul*.zip"
