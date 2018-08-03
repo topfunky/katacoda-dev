@@ -1,11 +1,13 @@
 
 host_commands=(
-"curl -L http://assets.joinscrapbook.com/unzip -o ~/.bin/unzip"
+"mkdir -p ~/.bin"
+"mkdir -p ~/src"
+"cd ~/src && curl -L http://assets.joinscrapbook.com/unzip -O"
+"mv ~/src/unzip ~/.bin/unzip"
 "chmod +x ~/.bin/unzip"
 
-"curl -L -o ~/.bin/consul.zip https://releases.hashicorp.com/consul/1.2.2/consul_1.2.2_linux_amd64.zip"
-"unzip -d ~/.bin ~/.bin/consul.zip"
-"rm ~/.bin/consul.zip"
+"cd ~/src && curl -L https://releases.hashicorp.com/consul/1.2.2/consul_1.2.2_linux_amd64.zip -O"
+"unzip -d ~/.bin ~/src/consul*.zip"
 
 "mkdir -p ~/log"
 "nohup sh -c \"consul agent -dev -config-dir=~/config >~/log/consul.log 2>&1 &\" &"
