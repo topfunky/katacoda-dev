@@ -12,14 +12,14 @@ host_commands=(
 "nohup sh -c \"consul agent -dev -config-dir=~/config >~/log/consul.log 2>&1 &\" &"
 )
 
-function join { local IFS="$1"; shift; echo "$*"; }
-
 for cmd in "${host_commands[@]}"
 do
-  echo "COMMAND: ${cmd}"
+  echo "COMMAND: $cmd"
   $($cmd)
 done
 
-all_commands=$(join && ${host_commands[@]})
-echo "$all_commands"
-ssh root@host01 "$all_commands"
+for cmd in "${host_commands[@]}"
+do
+  echo "COMMAND: $cmd"
+  ssh root@host01 "$cmd"
+done
