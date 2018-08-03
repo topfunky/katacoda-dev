@@ -1,9 +1,18 @@
-curl -L http://assets.joinscrapbook.com/unzip -o ~/.bin/unzip
-chmod +x ~/.bin/unzip
 
-curl -L -o ~/consul.zip https://releases.hashicorp.com/consul/1.2.2/consul_1.2.2_linux_amd64.zip
-unzip -d  ~/.bin/ ~/consul.zip
-rm ~/consul.zip
+host_commands = (
+"apt-get install -y unzip"
 
-ssh root@host01 'mkdir -p ~/log && nohup sh -c "consul agent -dev -config-dir=~/config >~/log/consul.log 2>&1 &" &'
+"curl -L -o ~/.bin/consul.zip https://releases.hashicorp.com/consul/1.2.2/consul_1.2.2_linux_amd64.zip"
+"unzip -d ~/.bin ~/.bin/consul.zip"
+"rm ~/.bin/consul.zip"
+
+"mkdir -p ~/log"
+"nohup sh -c \"consul agent -dev -config-dir=~/config >~/log/consul.log 2>&1 &\" &"
+)
+
+for cmd in "${host_commands[@]}"
+do
+  ssh root@host01 "${cmd}"
+done
+
 ssh root@host02 'echo "HELLO"'
