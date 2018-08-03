@@ -23,52 +23,15 @@
     },
     "finish": {
       "text": "finish.md"
-    },
-    "assets": {
-      "client": [
-        {
-          "file": "bin/counting-service",
-          "target": "~/.bin/"
-        },
-        {
-          "file": "bin/dashboard-service",
-          "target": "~/.bin/"
-        },
-        {
-          "file": "config/counting.json",
-          "target": "~/tutorial/config/"
-        },
-        {
-          "file": "config/dashboard.json",
-          "target": "~/tutorial/config/"
-        }
-      ],
-      "host01": [
-        {
-          "file": "bin/counting-service",
-          "target": "~/.bin/"
-        },
-        {
-          "file": "bin/dashboard-service",
-          "target": "~/.bin/"
-        },
-        {
-          "file": "config/counting.json",
-          "target": "~/tutorial/config/"
-        },
-        {
-          "file": "config/dashboard.json",
-          "target": "~/tutorial/config/"
-        }
-      ]
     }
   },
   "environment": {
-    "uilayout": "terminal-terminal",
+    "uilayout": "terminal-iframe",
     "uimessage1":
       "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands version 0.1.\u001b[m\r\n"
   },
   "backend": {
-    "imageid": "docker"
+    "imageid": "docker",
+    "port": 9002
   }
 }
