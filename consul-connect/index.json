@@ -1,6 +1,7 @@
 {
   "title": "Consul Connect",
-  "description": "Run two services and connect them securely with Consul Connect",
+  "description":
+    "Run two services and connect them securely with Consul Connect",
   "details": {
     "steps": [
       {
@@ -22,11 +23,52 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+      ],
+      "host01": [
+        {
+          "file": "bin/counting-service",
+          "target": "~/.bin/"
+        },
+        {
+          "file": "bin/dashboard-service",
+          "target": "~/.bin/"
+        },
+        {
+          "file": "config/counting.json",
+          "target": "~/config/"
+        },
+        {
+          "file": "config/dashboard.json",
+          "target": "~/config/"
+        }
+      ],
+      "host02": [
+        {
+          "file": "bin/counting-service",
+          "target": "~/.bin/"
+        },
+        {
+          "file": "bin/dashboard-service",
+          "target": "~/.bin/"
+        },
+        {
+          "file": "config/counting.json",
+          "target": "~/config/"
+        },
+        {
+          "file": "config/dashboard.json",
+          "target": "~/config/"
+        }
+      ]
     }
   },
   "environment": {
     "uilayout": "terminal-terminal",
-    "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands version 0.1.\u001b[m\r\n"
+    "uimessage1":
+      "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands version 0.1.\u001b[m\r\n"
   },
   "backend": {
     "imageid": "docker"
