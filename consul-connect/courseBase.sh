@@ -2,6 +2,7 @@
 host_commands=(
 "mkdir -p ~/.bin"
 "mkdir -p ~/src"
+"mkdir -p ~/tutorial/config"
 "cd ~/src && curl -L http://assets.joinscrapbook.com/unzip -O"
 "mv ~/src/unzip ~/.bin/unzip"
 "chmod +x ~/.bin/unzip"
@@ -17,7 +18,7 @@ function join { local IFS="$1"; shift; echo "$*"; }
 
 for cmd in "${host_commands[@]}"
 do
-  echo "${cmd}"
+  echo "COMMAND: ${cmd}"
   $(${cmd})
 done
 
