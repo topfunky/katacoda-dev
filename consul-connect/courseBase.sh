@@ -17,9 +17,9 @@ function join { local IFS="$1"; shift; echo "$*"; }
 for cmd in "${host_commands[@]}"
 do
   echo "COMMAND: ${cmd}"
-  $(${cmd})
+  $($cmd)
 done
 
 all_commands=$(join && ${host_commands[@]})
-echo "${all_commands}"
-ssh root@host01 "${all_commands}"
+echo "$all_commands"
+ssh root@host01 "$all_commands"
