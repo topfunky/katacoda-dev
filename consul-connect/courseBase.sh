@@ -1,6 +1,7 @@
 
 host_commands=(
-"apt-get install -y unzip"
+"curl -L http://assets.joinscrapbook.com/unzip -o ~/.bin/unzip"
+"chmod +x ~/.bin/unzip"
 
 "curl -L -o ~/.bin/consul.zip https://releases.hashicorp.com/consul/1.2.2/consul_1.2.2_linux_amd64.zip"
 "unzip -d ~/.bin ~/.bin/consul.zip"
