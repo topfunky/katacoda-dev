@@ -16,6 +16,8 @@ host_commands=(
 
 all_commands=$(awk -v sep=' && ' 'BEGIN{ORS=OFS="";for(i=1;i<ARGC;i++){print ARGV[i],ARGC-i-1?sep:""}}' "${host_commands[@]}")
 
+echo "$all_commands"
+
 ssh root@host01 "$all_commands"
 
 # for cmd in "${host_commands[@]}"
