@@ -14,12 +14,12 @@ host_commands=(
 "chmod +x /usr/local/bin/*-service"
 
 "useradd consul --create-home"
-"mkdir -p /home/consul/config"
-"cd /home/consul/config && curl -L https://github.com/topfunky/katacoda-dev/raw/master/consul-connect/assets/config/counting.json -O"
-"cd /home/consul/config && curl -L https://github.com/topfunky/katacoda-dev/raw/master/consul-connect/assets/config/dashboard.json -O"
+"mkdir -p /etc/consul.d"
+"cd /etc/consul.d && curl -L https://github.com/topfunky/katacoda-dev/raw/master/consul-connect/assets/config/counting.json -O"
+"cd /etc/consul.d && curl -L https://github.com/topfunky/katacoda-dev/raw/master/consul-connect/assets/config/dashboard.json -O"
 "mkdir -p /home/consul/log"
 "chown -R consul /home/consul"
-"runuser -l consul -c \"consul agent -dev -config-dir=/home/consul/config >/home/consul/log/consul.log 2>&1 &\""
+"runuser -l consul -c \"consul agent -dev -config-dir=/etc/consul.d >/home/consul/log/consul.log 2>&1 &\""
 )
 
 all_commands=$(awk -v sep=' && ' 'BEGIN{ORS=OFS="";for(i=1;i<ARGC;i++){print ARGV[i],ARGC-i-1?sep:""}}' "${host_commands[@]}")

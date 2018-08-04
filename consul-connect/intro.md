@@ -1,8 +1,12 @@
 
 # Consul Connect
 
-In this hands-on lab, you'll start two services and connect them over a secure proxy with Consul Connect.
+In this hands-on lab, you'll start two services and connect them over an encrypted proxy with Consul Connect.
 
-The front end will be a dashboard that displays a number. The backend will be a counting service that increments a number every time it is asked for one.
+The front end will be a dashboard that displays a number. The backend will be a counting service that serves a JSON feed with a constantly incrementing number.
 
-We've configured Consul for you, so it's ready to go. Let's get started!
+The front end uses websockets to update its user interface every few seconds with fresh data from the backend counting service.
+
+You'll spend most of your time executing commands against our demo applications (`dashboard` and `counting`), but Consul works to help services discover each other and connect through encrypted proxies.
+
+We've configured Consul for you and started a single agent, so it's ready to go. Let's get started!

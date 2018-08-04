@@ -1,4 +1,4 @@
-Next, connect to `host01` in a new terminal. You'll start the front-end `dashboard-service` on port `9002`.
+Next, connect to `host01` in a second terminal. You'll start the front-end `dashboard-service` on port `9002` and it will communicate to the `counting` service through an encrypted proxy.
 
 Click the **+** button in the tab bar and select **Open New Terminal**.
 
@@ -6,9 +6,9 @@ Now connect to `host01` again.
 
 `ssh root@host01`{{execute}}
 
-Consul is configured to look for the `dashboard-service` on port `9002`. You can see the configuration by looking at the configuration file at `/home/consul/config/dashboard.json`.
+Consul is configured to look for the `dashboard-service` on port `9002`. You can see the configuration by looking at the configuration file at `/etc/consul.d/dashboard.json`.
 
-`cat /home/consul/config/dashboard.json`{{execute}}
+`cat /etc/consul.d/dashboard.json`{{execute}}
 
 Now start the service, specifying `PORT` as an environment variable.
 
