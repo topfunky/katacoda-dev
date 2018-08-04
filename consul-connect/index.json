@@ -19,6 +19,28 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "counting-service",
+          "target": "/usr/local/bin/",
+          "chmod": "+x"
+        },
+        {
+          "file": "dashboard-service",
+          "target": "/usr/local/bin/",
+          "chmod": "+x"
+        },
+        {
+          "file": "counting.json",
+          "target": "/etc/consul.d/"
+        },
+        {
+          "file": "dashboard.json",
+          "target": "/etc/consul.d/"
+        }
+      ]
     }
   },
   "environment": {
