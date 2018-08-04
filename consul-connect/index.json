@@ -29,6 +29,6 @@
   "backend": {
     "imageid": "docker",
     "showdashboard": true,
-    "dashboards": [{"name": "Counting", "port": 9003}, {"name": "Dashboard", "port": 9002}],
+    "dashboards": [{"name": "Counting", "port": 9003}, {"name": "Dashboard", "port": 9002}]
   }
 }
