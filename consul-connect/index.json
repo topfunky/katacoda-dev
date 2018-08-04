@@ -5,16 +5,12 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Start the backend counting service",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Start the dashboard",
         "text": "step2.md"
-      },
-      {
-        "title": "Step 3",
-        "text": "step3.md"
       }
     ],
     "intro": {
