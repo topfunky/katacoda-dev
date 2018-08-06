@@ -18,7 +18,7 @@ host_commands=(
 "cd /etc/consul.d && curl -L https://github.com/topfunky/katacoda-dev/raw/master/consul-connect/assets/config/dashboard.json -O"
 "mkdir -p /home/consul/log"
 "chown -R consul /home/consul"
-"runuser -l consul -c \"consul agent -dev -bind \$(echo \$SSH_CLIENT | cut -d \" \" -f1) -config-dir=/etc/consul.d >/home/consul/log/consul.log 2>&1 &\""
+"runuser -l consul -c \"consul agent -dev -client 0.0.0.0 -config-dir=/etc/consul.d >/home/consul/log/consul.log 2>&1 &\""
 )
 
 all_commands=$(awk -v sep=' && ' 'BEGIN{ORS=OFS="";for(i=1;i<ARGC;i++){print ARGV[i],ARGC-i-1?sep:""}}' "${host_commands[@]}")
