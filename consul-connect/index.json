@@ -11,6 +11,14 @@
       {
         "title": "Start the dashboard",
         "text": "step2.md"
+      },
+      {
+        "title": "Deny service connections",
+        "text": "step3.md"
+      },
+      {
+        "title": "Allow dashboard connection",
+        "text": "step4.md"
       }
     ],
     "intro": {

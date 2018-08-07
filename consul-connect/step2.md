@@ -1,6 +1,10 @@
+# Launch Demo Dashboard
+
 Next, connect to `host01` in a second terminal. You'll start the front-end `dashboard-service` on port `9002` and it will communicate to the `counting` service through an encrypted proxy.
 
 Click the **+** button in the tab bar and select **Open New Terminal**.
+
+<img src="https://s3-us-west-1.amazonaws.com/education-yh/consul-connect/images/2-1-new-tab.png" alt="Consul Web UI" title="Consul Web UI">
 
 Now connect to `host01` again.
 
@@ -14,8 +18,10 @@ Now start the service, specifying `PORT` as an environment variable.
 
 `PORT=9002 dashboard-service`{{execute}}
 
-You can view this dashboard at this URL:
+You can view the demo dashboard application at this URL:
 
-https://[[HOST_SUBDOMAIN]]-9002-[[KATACODA_HOST]].environments.katacoda.com/
+- [Dashboard Application](https://[[HOST_SUBDOMAIN]]-9002-[[KATACODA_HOST]].environments.katacoda.com/)
+
+<img src="https://s3-us-west-1.amazonaws.com/education-yh/consul-connect/images/2-2-dashboard.png" alt="Demo Dashboard" title="Demo Dashboard">
 
 The front-end dashboard is reading the backend counting service and displays the number. Consul Connect is being used to proxy communication between the two services.
