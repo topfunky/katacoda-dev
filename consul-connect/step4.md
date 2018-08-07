@@ -4,7 +4,7 @@ For the final step in this tutorial, let's enable communication between the `das
 
 Back at the [Consul Web UI](https://[[HOST_SUBDOMAIN]]-8500-[[KATACODA_HOST]].environments.katacoda.com/) in the Intentions menu, click the blue "Create" button to create an additional intention.
 
-This intention will `allow` communication from `dashboard` to `counting`. Find `dashboard` in the first pulldown, then find `counting` in the second pulldown. Select `allow` below. Optionally add a description.
+This intention will `allow` communication from the source `dashboard` service to the destination `counting` service. Find `dashboard` in the first pulldown, then find `counting` in the second pulldown. Select `allow` below. Optionally add a description.
 
 Click "Save".
 

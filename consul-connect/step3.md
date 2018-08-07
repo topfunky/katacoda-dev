@@ -14,13 +14,11 @@ Save the intention.
 
 Since existing proxies will not be terminated when a `deny` rule is created, we must restart the `dashboard-service`. Kill it with `Ctrl-C` in Terminal 2.
 
-`^c`{{execute}}
-
 Restart the service.
 
 `PORT=9002 dashboard-service`{{execute}}
 
-You'll now see that the [Demo Dashboard](https://[[HOST_SUBDOMAIN]]-9002-[[KATACODA_HOST]].environments.katacoda.com/) cannot reach the backend `counting-service`, as intended.
+Refresh the [Demo Dashboard](https://[[HOST_SUBDOMAIN]]-9002-[[KATACODA_HOST]].environments.katacoda.com/) and you will see that it cannot reach the backend `counting-service`. This is intended.
 
 <img src="https://s3-us-west-1.amazonaws.com/education-yh/consul-connect/images/3-3-dashboard-unreachable.png" alt="Demo dashboard cannot reach the counting service" title="Demo dashboard cannot reach the counting service">
 
