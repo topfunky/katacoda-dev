@@ -1,4 +1,10 @@
-First, connect to `host01`. You'll examine the configuration for this service and then start the `counting-service` on port `9003`.
+We're already running Consul for you on a publically accessible IP address. The Consul web UI runs on port `8500`. Visit it in a new tab here:
+
+- [Consul Web UI](https://[[HOST_SUBDOMAIN]]-8500-[[KATACODA_HOST]].environments.katacoda.com/)
+
+To start, you'll see a red `X` next to the `counting` and `dashboard` services since neither are running (so both are unhealthy).
+
+Now let's start some services. Connect to `host01`. You'll examine the configuration for this service and then start the `counting-service` on port `9003`.
 
 `ssh root@host01`{{execute}}
 
@@ -18,4 +24,6 @@ Now, start the service, specifying `PORT` as an environment variable.
 
 You can view the output of the counting service at this URL. It's a simple JSON API.
 
-https://[[HOST_SUBDOMAIN]]-9003-[[KATACODA_HOST]].environments.katacoda.com/
+- [Counting Service JSON](https://[[HOST_SUBDOMAIN]]-9003-[[KATACODA_HOST]].environments.katacoda.com/)
+
+Now refresh the [Consul Web UI](https://[[HOST_SUBDOMAIN]]-8500-[[KATACODA_HOST]].environments.katacoda.com/). You'll notice that the `counting` service now shows as healthy.
