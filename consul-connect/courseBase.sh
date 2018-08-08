@@ -1,3 +1,9 @@
+sleep 1
+ssh root@host01 mkdir -p /host/data
+docker -H [[HOST_IP]]:2345 swarm init
+token=$(docker -H [[HOST_IP]]:2345 swarm join-token -q worker)
+docker -H [[HOST2_IP]]:2345 swarm join [[HOST_IP]]:2377 --token $token
+
 host_commands=(
 "mkdir -p ~/src"
 "cd ~/src && curl -L http://assets.joinscrapbook.com/unzip -o /usr/local/bin/unzip"
