@@ -1,4 +1,7 @@
 sleep 1
+echo "[[HOST_IP]]"
+echo "[[HOST2_IP]]"
+
 ssh root@host01 mkdir -p /host/data
 docker -H [[HOST_IP]]:2345 swarm init
 token=$(docker -H [[HOST_IP]]:2345 swarm join-token -q worker)
