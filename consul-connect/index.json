@@ -3,6 +3,7 @@
   "description":
     "Run two services and connect them securely with Consul Connect",
   "time": "20 minutes",
+  "icon": "fa-terraform",
   "details": {
     "steps": [
       {
