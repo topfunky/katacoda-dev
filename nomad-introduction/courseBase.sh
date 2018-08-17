@@ -12,7 +12,7 @@ chmod +x  ~/.bin/nomad
 rm ~/nomad.zip ~/consul.zip
 
 host01_commands=(
-"curl --location https://github.com/topfunky/katakoda-dev/raw/master/nomad-introduction/assets/host01_install.sh --remote-name"
+"curl --location https://raw.githubusercontent.com/topfunky/katacoda-dev/master/nomad-introduction/assets/host01_install.sh --remote-name"
 "sh host01_install.sh"
 )
 
