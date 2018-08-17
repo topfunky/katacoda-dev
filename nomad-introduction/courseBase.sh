@@ -22,7 +22,7 @@ host01_commands=(
 "chmod +x  /usr/bin/nomad"
 "rm ~/nomad.zip ~/consul.zip"
 "mkdir -p ~/log"
-"nohup sh -c \"consul agent -dev >~/log/consul.log 2>&1 & nohup nomad agent -dev -bind=0.0.0.0 >~/log/nomad.log 2>&1 &\" &"
+"nohup sh -c 'consul agent -dev >~/log/consul.log 2>&1 & nohup nomad agent -dev -bind=0.0.0.0 >~/log/nomad.log 2>&1 &' &"
 "nomad -autocomplete-install"
 )
 
