@@ -1,5 +1,7 @@
 # View Consul UI and Launch Counting Service
 
+You can type code into the terminal window or click `⮐` by any command snippet to automatically execute the snippet in the terminal.
+
 We're already running Consul for you on a publically accessible IP address. The Consul web UI runs on port `8500`. Visit it in a new tab here:
 
 - [Consul Web UI](https://[[HOST_SUBDOMAIN]]-8500-[[KATACODA_HOST]].environments.katacoda.com/)

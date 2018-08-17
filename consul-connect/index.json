@@ -5,6 +5,13 @@
   "time": "15 minutes",
   "icon": "fa-consul",
   "details": {
+    "intro": {
+      "text": "intro.md",
+      "code": "courseBase.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
     "steps": [
       {
         "title": "Start the backend counting service",
@@ -22,14 +29,7 @@
         "title": "Allow dashboard connection",
         "text": "step4.md"
       }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "code": "courseBase.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
+    ]
   },
   "environment": {
     "uilayout": "terminal",
