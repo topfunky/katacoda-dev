@@ -13,6 +13,8 @@ rm ~/nomad.zip ~/consul.zip
 
 cat "export NOMAD_ADDR=http://host01:4646" >> ~/.profile
 
+export NOMAD_ADDR="http://host01:4646"
+
 host01_commands=(
 "curl --location https://raw.githubusercontent.com/topfunky/katacoda-dev/master/nomad-introduction/assets/host01_install.sh --remote-name"
 "sh host01_install.sh"
