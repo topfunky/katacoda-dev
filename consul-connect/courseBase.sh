@@ -19,7 +19,9 @@ cd /etc/consul.d && curl -L https://github.com/hashicorp/katakoda/raw/master/con
 cd /etc/consul.d && curl -L https://github.com/hashicorp/katakoda/raw/master/consul-connect/assets/config/dashboard.json -O
 mkdir -p /home/consul/log
 chown -R consul /home/consul
-runuser -l consul -c \"consul agent -dev -client 0.0.0.0 -config-dir=/etc/consul.d >/home/consul/log/consul.log 2>&1 &\"
+runuser -l consul -c "consul agent -dev -client 0.0.0.0 -config-dir=/etc/consul.d >/home/consul/log/consul.log 2>&1 &"
+
+cd ~/
 
 echo "Consul has been installed."
 
