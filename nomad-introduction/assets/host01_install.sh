@@ -15,7 +15,7 @@ rm ~/nomad.zip ~/consul.zip
 
 mkdir -p ~/log
 
-consul agent -dev >~/log/consul.log 2>&1 &
+consul agent -dev -client=0.0.0.0 >~/log/consul.log 2>&1 &
 
 nomad agent -dev -bind=0.0.0.0 >~/log/nomad.log 2>&1 &
 nomad -autocomplete-install

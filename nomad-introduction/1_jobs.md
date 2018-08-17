@@ -1,3 +1,7 @@
+- [Consul Web UI](https://[[HOST_SUBDOMAIN]]-8500-[[KATACODA_HOST]].environments.katacoda.com/)
+- [Nomad Web UI](https://[[HOST_SUBDOMAIN]]-4646-[[KATACODA_HOST]].environments.katacoda.com/)
+
+
 This tutorial has a fully featured Nomad and Consul environment configured for you to play with.  You can execute commands in the terminal window on the right or you can also click on the code examples which have the return symbol `⮐` to automatically execute the snippet in the terminal.
 
 Jobs are the primary configuration that users interact with when using Nomad. A job is a declarative specification of tasks that Nomad should run. Jobs have a globally unique name, one or many task groups, which are themselves collections of one or many tasks.
