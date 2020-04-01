@@ -12,4 +12,4 @@ resource "docker_image" "nginx" {
   name = "nginx:latest"
 }
 EOF
-
+cd ~/terraform-docker-demo
