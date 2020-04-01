@@ -16,7 +16,11 @@
         "code": "terminal.sh",
         "courseData": "courseBase.sh"
       }
-    ]
+    ],
+    "finish": {
+      "text": "finish.md",
+      "credits": "https://learn.hashicorp.com/terraform"
+    }
   },
   "environment": {
     "uilayout": "editor-terminal",
