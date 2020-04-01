@@ -1,6 +1,7 @@
 {
   "title": "Terraform Tutorial",
   "description": "A 60 second Terraform tutorial with just the basics",
+  "time": 1,
   "icon": "fa-terraform",
   "details": {
     "intro": {
