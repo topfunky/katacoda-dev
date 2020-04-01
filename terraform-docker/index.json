@@ -18,6 +18,11 @@
     "finish": {
       "text": "finish.md",
       "credits": "https://learn.hashicorp.com/terraform"
+    },
+    "assets": {
+      "host01": [
+        { "file": "main.tf", "target": "~/terraform-docker-demo" }
+      ]
     }
   },
   "environment": {
