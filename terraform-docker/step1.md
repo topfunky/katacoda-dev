@@ -3,7 +3,7 @@
 
 ## View code
 
-`~/terraform-docker-demo/main.tf`{{open}}
+`terraform-docker-demo/main.tf`{{open}}
 
 ## Init
 
