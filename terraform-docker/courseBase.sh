@@ -1,6 +1,5 @@
 mkdir -p ~/terraform-docker-demo
-cd !$
-tee main.tf <<EOF
+tee ~/terraform-docker-demo/main.tf <<EOF
 resource "docker_container" "nginx" {
   image = docker_image.nginx.latest
   name  = "tutorial"

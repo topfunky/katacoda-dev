@@ -1,4 +1,5 @@
 
+`cd ~/terraform-docker-demo`{{execute}}
 
 ## View code
 
@@ -16,7 +17,7 @@
 
 Visit
 
-- [Nginx index page](https://[[HOST_SUBDOMAIN]]-8500-[[KATACODA_HOST]].environments.katacoda.com/)
+- [Nginx index page](https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/)
 
 ## Destroy
 
