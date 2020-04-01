@@ -12,8 +12,7 @@
     "steps": [
       {
         "title": "Terraform in 60 Seconds",
-        "text": "step1.md",
-        "courseData": "courseBase.sh"
+        "text": "step1.md"
       }
     ],
     "finish": {
