@@ -1,6 +1,6 @@
 {
 	"title": "Demo",
-	"description": "Demo 002",
+	"description": "Demo 003",
 	"time": "30 minutes",
 	"icon": "fa-terraform",
 	"details": {
@@ -22,6 +22,6 @@
 		"hideHiddenFiles": true
 	},
 	"backend": {
-		"imageid": "ubuntu"
+		"imageid": "ubuntu:2004"
 	}
 }
