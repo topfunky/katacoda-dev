@@ -1,6 +1,6 @@
 {
 	"title": "Demo",
-	"description": "Demo 004",
+	"description": "Demo 005",
 	"time": "30 minutes",
 	"icon": "fa-terraform",
 	"details": {
@@ -18,7 +18,7 @@
 	"environment": {
 		"uilayout": "editor-terminal",
 		"uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands version 0.1.\u001b[m\r\n",
-		"uieditorpath": "/root/learn-terraform",
+		"uieditorpath": "/root/demo-folder",
 		"hideHiddenFiles": true
 	},
 	"backend": {
