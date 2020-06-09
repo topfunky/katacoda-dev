@@ -1,6 +1,6 @@
 {
 	"title": "Demo",
-	"description": "Demo 006",
+	"description": "Demo 007",
 	"time": "30 minutes",
 	"icon": "fa-terraform",
 	"details": {
@@ -11,7 +11,7 @@
 		"assets": {
 			"host01": [{
 				"file": "*",
-				"target": "/root"
+				"target": "/root/demo-folder"
 			}]
 		}
 	},
