@@ -1,4 +1,3 @@
-cat << 'EOF' > /tmp/provision.sh
 #! /bin/bash
 
 log() {
@@ -43,7 +42,3 @@ docker volume create client_config > /dev/null
 docker container create --name volumes -v server_config:/server -v client_config:/client alpine > /dev/null
 
 finish
-
-EOF
-
-chmod +x /tmp/provision.sh

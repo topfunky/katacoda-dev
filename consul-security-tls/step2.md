@@ -42,11 +42,11 @@ You can verify the Consul server started correctly by checking the logs.
 
 `docker logs server`{{execute T2}}
 
-Alternatively you can reach the [Consul UI](https://[[HOST_SUBDOMAIN]]-8500-[[KATACODA_HOST]].environments.katacoda.com/ui) tab to be redirected to the Consul UI.
+Or you can click the [Consul UI](https://[[HOST_SUBDOMAIN]]-8500-[[KATACODA_HOST]].environments.katacoda.com/ui) tab to be redirected to the Consul UI.
 
 <div style="background-color:#fcf6ea; color:#866d42; border:1px solid #f8ebcf; padding:1em; border-radius:3px;">
   <p><strong>Warning: </strong>
-  The current configuration leaves the HTTP interface open for the UI so to permit you to access it without setting a client certificate for your browser. To complete configuration and prevent the UOI to be accessed over HTTP you can add the following to your server configuration:<br>
+  The current configuration leaves the HTTP interface open for the UI so to permit you to access it without setting a client certificate for your browser. To complete configuration and prevent the UI to be accessed over HTTP you can add the following to your server configuration:<br>
   ```
   "ports": {
     "http": -1,
